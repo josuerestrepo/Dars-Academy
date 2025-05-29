@@ -27,9 +27,12 @@ body {
 /* Header */
 header {
     background-color: var(--color-primario);
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
-    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {
@@ -49,25 +52,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: var(--color-acento);
     border-radius: 5px;
-}
-
-/* Barra estática */
-.barra_estatica {
-    background-color: var(--color-primario);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    backdrop-filter: blur(6px);
-}
-
-.barra_estatica .logo img {
-    height: 40px;
-}
-
-.opciones a img {
-    height: 30px;
-    margin-left: 1rem;
 }
 
 /* Vista del chat */
@@ -90,6 +74,7 @@ nav ul li a:hover {
 
 .contenedor_busqueda_chat {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
 }
